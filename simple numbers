@@ -1,0 +1,19 @@
+<html>
+<head>
+<meta charset="utf-8">
+</head>
+<body>
+<script>
+do {var firsti=+prompt('Введите начало числового интервала(больше 0)')}
+while (firsti<=0||firsti==null||firsti==NaN);
+do {var secondi=+prompt('Введите конец числового интервала')}
+while (secondi<0 || (secondi<firsti)||secondi==null||secondi==NaN);
+if (firsti>~~firsti) {firsti=firsti+1};  
+outer: for (var i=~~firsti; i<=~~secondi; i++){
+	if (i<=0) continue outer
+for(var a=2; a<i; a++){
+if (i%a==0 ) continue outer}
+alert (i);}
+</script>
+</body>
+</html>
